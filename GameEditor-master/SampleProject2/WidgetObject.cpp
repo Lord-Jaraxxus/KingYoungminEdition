@@ -125,9 +125,9 @@ bool WidgetObject::Frame()
 	return true;
 }
 
-bool WidgetObject::SetPosition(Vector2 orginPos)
+bool WidgetObject::SetPosition(Vector2 originPos)
 {
-	m_OrginPos = orginPos;
+	m_OriginPos = originPos;
 	return true;
 }
 
