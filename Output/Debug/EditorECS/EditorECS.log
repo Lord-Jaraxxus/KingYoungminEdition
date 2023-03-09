@@ -1,0 +1,31 @@
+﻿  LightSystem.cpp
+  RenderSystem.cpp
+  코드를 생성하고 있습니다...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1545,5): warning MSB8012: TargetPath(D:\Download\GameEditor-master\Output\Debug\EditorECS\EditorECS.lib)이(가) Library의 OutputFile 속성 값(D:\Download\GameEditor-master\GameEditor-master\EditorECS\EditorECS.lib)과 일치하지 않습니다. 이로 인해 프로젝트가 잘못 빌드될 수 있습니다. 이를 수정하려면 $(OutDir), $(TargetName) 및 $(TargetExt) 속성 값이 %(Lib.OutputFile)에 지정된 값과 일치해야 합니다.
+  EditorECS.vcxproj -> D:\Download\GameEditor-master\Output\Debug\EditorECS\EditorECS.lib
+  Actor.h
+  Camera.h
+  CameraSystem.h
+  CubeComponent.h
+  Define.h
+  DirectionalLight.h
+  Landscape.h
+  LandscapeComponent.h
+  Light.h
+  LightComponent.h
+  LightSystem.h
+  Material.h
+  MovementComponent.h
+  MovementSystem.h
+  PlaneComponent.h
+  PointLight.h
+  RenderSystem.h
+  SkeletalMeshComponent.h
+  SpotLight.h
+  StaticMeshComponent.h
+  TransformComponent.h
+  TransformSystem.h
+         22개 파일이 복사되었습니다.
+  MeshComponent.hpp
+          1개 파일이 복사되었습니다.
+          1개 파일이 복사되었습니다.

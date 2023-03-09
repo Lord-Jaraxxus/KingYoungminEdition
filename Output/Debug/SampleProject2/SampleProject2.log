@@ -1,0 +1,46 @@
+﻿          1개 파일이 복사되었습니다.
+  BaseScene.cpp
+D:\GameEditor-master\KingYoungminEdition\GameEditor-master\include\EditorECS\CameraSystem.h(23,23): warning C4101: 'rotation' :참조되지 않은 지역 변수입니다.
+  MapScene.cpp
+D:\GameEditor-master\KingYoungminEdition\GameEditor-master\include\EditorECS\CameraSystem.h(23,23): warning C4101: 'rotation' :참조되지 않은 지역 변수입니다.
+D:\GameEditor-master\KingYoungminEdition\GameEditor-master\SampleProject2\MapScene.cpp(17,123): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+  Sample.cpp
+D:\GameEditor-master\KingYoungminEdition\GameEditor-master\include\EditorECS\CameraSystem.h(23,23): warning C4101: 'rotation' :참조되지 않은 지역 변수입니다.
+  TitleScene.cpp
+D:\GameEditor-master\KingYoungminEdition\GameEditor-master\include\EditorECS\CameraSystem.h(23,23): warning C4101: 'rotation' :참조되지 않은 지역 변수입니다.
+D:\GameEditor-master\KingYoungminEdition\GameEditor-master\SampleProject2\TitleScene.cpp(18,123): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+  UI_Loader.cpp
+D:\GameEditor-master\KingYoungminEdition\GameEditor-master\SampleProject2\UI_Loader.cpp(66,9): warning C4101: 'cutNum' :참조되지 않은 지역 변수입니다.
+  WidgetComponent.cpp
+  WidgetObject.cpp
+D:\GameEditor-master\KingYoungminEdition\GameEditor-master\SampleProject2\WidgetObject.cpp(154,41): warning C4927: 변환이 잘못되었습니다. 사용자 정의 변환이 암시적으로 두 번 이상 적용되었습니다.
+D:\GameEditor-master\KingYoungminEdition\GameEditor-master\SampleProject2\WidgetObject.cpp(154,41): message : 'DirectX::SimpleMath::Vector2::Vector2(DirectX::FXMVECTOR) noexcept' 생성자를 호출하는 동안
+D:\GameEditor-master\KingYoungminEdition\GameEditor-master\include\DXTK\SimpleMath.h(119): message : 'DirectX::SimpleMath::Vector2::Vector2' 선언을 참조하십시오.
+D:\GameEditor-master\KingYoungminEdition\GameEditor-master\SampleProject2\WidgetObject.cpp(155,41): warning C4927: 변환이 잘못되었습니다. 사용자 정의 변환이 암시적으로 두 번 이상 적용되었습니다.
+D:\GameEditor-master\KingYoungminEdition\GameEditor-master\SampleProject2\WidgetObject.cpp(155,41): message : 'DirectX::SimpleMath::Vector2::Vector2(DirectX::FXMVECTOR) noexcept' 생성자를 호출하는 동안
+D:\GameEditor-master\KingYoungminEdition\GameEditor-master\include\DXTK\SimpleMath.h(119): message : 'DirectX::SimpleMath::Vector2::Vector2' 선언을 참조하십시오.
+  WidgetRenderSystem.cpp
+  코드를 생성하고 있습니다...
+BaseCore.lib(BaseCore.obj) : warning LNK4099: 'BaseCore.pdb' PDB를 'BaseCore.lib(BaseCore.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\BaseCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+BaseCore.lib(DXDevice.obj) : warning LNK4099: 'BaseCore.pdb' PDB를 'BaseCore.lib(DXDevice.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\BaseCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+BaseCore.lib(DXSamplerState.obj) : warning LNK4099: 'BaseCore.pdb' PDB를 'BaseCore.lib(DXSamplerState.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\BaseCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+BaseCore.lib(DXShaderManager.obj) : warning LNK4099: 'BaseCore.pdb' PDB를 'BaseCore.lib(DXShaderManager.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\BaseCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+BaseCore.lib(DXTexture.obj) : warning LNK4099: 'BaseCore.pdb' PDB를 'BaseCore.lib(DXTexture.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\BaseCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+BaseCore.lib(DXTextureManager.obj) : warning LNK4099: 'BaseCore.pdb' PDB를 'BaseCore.lib(DXTextureManager.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\BaseCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+BaseCore.lib(FMODSound.obj) : warning LNK4099: 'BaseCore.pdb' PDB를 'BaseCore.lib(FMODSound.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\BaseCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+BaseCore.lib(FMODSoundManager.obj) : warning LNK4099: 'BaseCore.pdb' PDB를 'BaseCore.lib(FMODSoundManager.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\BaseCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+BaseCore.lib(Input.obj) : warning LNK4099: 'BaseCore.pdb' PDB를 'BaseCore.lib(Input.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\BaseCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+BaseCore.lib(Timer.obj) : warning LNK4099: 'BaseCore.pdb' PDB를 'BaseCore.lib(Timer.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\BaseCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+BaseCore.lib(WindowsClient.obj) : warning LNK4099: 'BaseCore.pdb' PDB를 'BaseCore.lib(WindowsClient.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\BaseCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+ECS.lib(World.obj) : warning LNK4099: 'ECS.pdb' PDB를 'ECS.lib(World.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\ECS.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+EditorCore.lib(EditorCore.obj) : warning LNK4099: 'EditorCore.pdb' PDB를 'EditorCore.lib(EditorCore.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\EditorCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+EditorECS.lib(Actor.obj) : warning LNK4099: 'EditorECS.pdb' PDB를 'EditorECS.lib(Actor.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\EditorECS.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+EditorECS.lib(Camera.obj) : warning LNK4099: 'EditorECS.pdb' PDB를 'EditorECS.lib(Camera.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\EditorECS.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+EditorECS.lib(Landscape.obj) : warning LNK4099: 'EditorECS.pdb' PDB를 'EditorECS.lib(Landscape.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\EditorECS.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+EditorECS.lib(MeshComponent.obj) : warning LNK4099: 'EditorECS.pdb' PDB를 'EditorECS.lib(MeshComponent.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\EditorECS.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+EditorECS.lib(RenderSystem.obj) : warning LNK4099: 'EditorECS.pdb' PDB를 'EditorECS.lib(RenderSystem.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\EditorECS.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+EditorECS.lib(StaticMeshComponent.obj) : warning LNK4099: 'EditorECS.pdb' PDB를 'EditorECS.lib(StaticMeshComponent.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\EditorECS.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTK_d.lib(DDSTextureLoader.obj) : warning LNK4099: 'DirectXTK.pdb' PDB를 'DirectXTK_d.lib(DDSTextureLoader.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\DirectXTK.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTK_d.lib(pch.obj) : warning LNK4099: 'DirectXTK.pdb' PDB를 'DirectXTK_d.lib(pch.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\DirectXTK.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTK_d.lib(WICTextureLoader.obj) : warning LNK4099: 'DirectXTK.pdb' PDB를 'DirectXTK_d.lib(WICTextureLoader.obj)' 또는 'D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\DirectXTK.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+  SampleProject2.vcxproj -> D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\SampleProject2.exe

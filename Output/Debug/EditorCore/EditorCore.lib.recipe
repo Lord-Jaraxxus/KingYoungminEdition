@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs />
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\EditorCore\CS_LandscapeSplatting.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\EditorCore\GS_Landscape.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\EditorCore\PS_Default.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\EditorCore\PS_Landscape.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\EditorCore\PS_Light.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\EditorCore\PS_NonTexturedUI.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\EditorCore\PS_TexturedUI.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\EditorCore\VS_NormalMapStaticMesh.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\EditorCore\VS_SkeletalMesh.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\EditorCore\VS_StaticMesh.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\EditorCore\VS_UserInterface.cso</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

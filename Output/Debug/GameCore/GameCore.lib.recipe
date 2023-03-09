@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs />
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\GameCore\CS_LandscapeSplatting.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\GameCore\GS_Landscape.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\GameCore\PS_Default.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\GameCore\PS_Landscape.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\GameCore\PS_Light.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\GameCore\VS_LandscapeSplatting.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\GameCore\VS_SkeletalMesh.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\Download\GameEditor-master\Output\Debug\GameCore\VS_StaticMesh.cso</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>
