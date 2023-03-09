@@ -1,2 +1,3 @@
 D:\Download\GameEditor-master\Output\Debug\SampleProject2\SampleProject2.exe
 D:\GameEditor-master\KingYoungminEdition\Output\Debug\SampleProject2\SampleProject2.exe
+D:\KingYoungminEdition\Output\Debug\SampleProject2\SampleProject2.exe
