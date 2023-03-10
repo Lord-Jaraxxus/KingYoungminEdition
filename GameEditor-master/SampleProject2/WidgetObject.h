@@ -76,7 +76,7 @@ public:
 
 	UIType			m_Type;
 	int				m_ID; // 얘는 여기서 필요없지않나? 흠
-	Vector2			m_OrginPos;
+	Vector2			m_OriginPos;
 	float			m_fDepth = 0.0f;
 	float			m_fAlpha = 1.0f;
 

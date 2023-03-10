@@ -4,7 +4,7 @@ bool TitleScene::Init()
 {
 	UI_Loader Loader;
 
-	// 1. Actor 생성
+	// Actor 생성
 	Actor* TitleUI = new Actor;
 	TitleUI->Name = L"Title";
 	auto tc = TitleUI->AddComponent<WidgetComponent>();
@@ -12,15 +12,15 @@ bool TitleScene::Init()
 	StartButton = tc->FindObj(L"Button_Start");
 
 
-	// 8. 액터에 카메라 추가.
+	// 액터에 카메라 추가.
 	DebugCamera = TitleUI->AddComponent<Camera>();
 	DebugCamera->CreateViewMatrix(Vector3(0.0f, 0.0f, -100.0f), Vector3(0.0f, 0.0f, 0.0f), Vector3(0.0f, 1.0, 0.0f));
 	DebugCamera->CreateProjectionMatrix(1.0f, 500.0f, PI * 0.25, (DXDevice::g_ViewPort.Width) / (DXDevice::g_ViewPort.Height));
 
-	// 9. 메인 월드에 액터 추가.
+	// 메인 월드에 액터 추가.
 	TheWorld.AddEntity(TitleUI);
 
-	// 10. 카메라 시스템 및 랜더링 시스템 추가.
+	// 카메라 시스템 및 랜더링 시스템 추가.
 	TheWorld.AddSystem(new CameraSystem);
 	TheWorld.AddSystem(new RenderSystem);
 	TheWorld.AddSystem(new WidgetRenderSystem);

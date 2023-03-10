@@ -44,6 +44,8 @@ bool SampleCore::Initialize()
 	Title->Init();
 	Map = new MapScene;
 	Map->Init();	
+	Battle = new BattleScene;
+	Battle->Init();
 
 	CurrentScene = Title;
 
@@ -63,13 +65,16 @@ bool SampleCore::Frame()
 			CurrentScene->SceneState = 0;
 			CurrentScene = Title;
 		}break;
+
 		case 2:
 		{
 			CurrentScene->SceneState = 0;
 			CurrentScene = Map;
 		}break;
+
 		case 3:
-		{
+		{	CurrentScene->SceneState = 0;
+			CurrentScene = Battle;
 		}break;
 
 		}

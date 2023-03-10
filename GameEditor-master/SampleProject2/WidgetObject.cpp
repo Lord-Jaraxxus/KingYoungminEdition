@@ -164,10 +164,10 @@ bool WidgetObject::UpdateCut(int cutNum)
 
 	Vector2 ndcWH = PtoN(m_pCutInfoList[cutNum]->pxWH);
 
-	Vertices[0].Pos = { m_OrginPos.x - ndcWH.x / 2, m_OrginPos.y + ndcWH.y / 2, m_fDepth }; // p1-LT
-	Vertices[1].Pos = { m_OrginPos.x + ndcWH.x / 2, m_OrginPos.y + ndcWH.y / 2, m_fDepth }; // p2-RT
-	Vertices[2].Pos = { m_OrginPos.x - ndcWH.x / 2, m_OrginPos.y - ndcWH.y / 2, m_fDepth }; // p3-LB
-	Vertices[3].Pos = { m_OrginPos.x + ndcWH.x / 2, m_OrginPos.y - ndcWH.y / 2, m_fDepth }; // p4-RB
+	Vertices[0].Pos = { m_OriginPos.x - ndcWH.x / 2, m_OriginPos.y + ndcWH.y / 2, m_fDepth }; // p1-LT
+	Vertices[1].Pos = { m_OriginPos.x + ndcWH.x / 2, m_OriginPos.y + ndcWH.y / 2, m_fDepth }; // p2-RT
+	Vertices[2].Pos = { m_OriginPos.x - ndcWH.x / 2, m_OriginPos.y - ndcWH.y / 2, m_fDepth }; // p3-LB
+	Vertices[3].Pos = { m_OriginPos.x + ndcWH.x / 2, m_OriginPos.y - ndcWH.y / 2, m_fDepth }; // p4-RB
 
 	Vertices[0].Texture = { m_pCutInfoList[cutNum]->uv.x, m_pCutInfoList[cutNum]->uv.y }; // p1-LT
 	Vertices[1].Texture = { m_pCutInfoList[cutNum]->uv.z, m_pCutInfoList[cutNum]->uv.y }; // p2-RT

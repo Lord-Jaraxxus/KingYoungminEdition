@@ -10,6 +10,7 @@ public:
 	virtual bool Release() override;
 
 public:
+	WidgetObject* Mon1;
 	WidgetObject* BackButton;
 };
 

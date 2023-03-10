@@ -1,2 +1,6 @@
 ﻿          1개 파일이 복사되었습니다.
+  Sample.cpp
+D:\KingYoungminEdition\GameEditor-master\include\EditorECS\CameraSystem.h(23,23): warning C4101: 'rotation' :참조되지 않은 지역 변수입니다.
+BaseCore.lib(BaseCore.obj) : warning LNK4099: 'BaseCore.pdb' PDB를 'BaseCore.lib(BaseCore.obj)' 또는 'D:\KingYoungminEdition\Output\Debug\SampleProject2\BaseCore.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+EditorCore.lib(EditorCore.obj) : warning LNK4099: '' PDB를 'EditorCore.lib(EditorCore.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
   SampleProject2.vcxproj -> D:\KingYoungminEdition\Output\Debug\SampleProject2\SampleProject2.exe

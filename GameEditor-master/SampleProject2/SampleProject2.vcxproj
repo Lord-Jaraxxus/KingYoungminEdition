@@ -149,6 +149,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BaseScene.h" />
+    <ClInclude Include="BattleScene.h" />
     <ClInclude Include="MapScene.h" />
     <ClInclude Include="Sample.h" />
     <ClInclude Include="TitleScene.h" />
@@ -159,6 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaseScene.cpp" />
+    <ClCompile Include="BattleScene.cpp" />
     <ClCompile Include="MapScene.cpp" />
     <ClCompile Include="Sample.cpp" />
     <ClCompile Include="TitleScene.cpp" />

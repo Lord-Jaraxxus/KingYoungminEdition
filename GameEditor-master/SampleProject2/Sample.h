@@ -2,13 +2,15 @@
 #include "BaseScene.h"
 #include "TitleScene.h"
 #include "MapScene.h"
+#include "BattleScene.h"
 
 class SampleCore : public EditorCore
 {
 public:
-	BaseScene*	CurrentScene;
-	TitleScene* Title;
-	MapScene*	Map;
+	BaseScene*		CurrentScene;
+	TitleScene*		Title;
+	MapScene*		Map;
+	BattleScene*	Battle;
 
 public:
 	SampleCore();
