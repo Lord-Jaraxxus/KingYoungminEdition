@@ -1,8 +1,27 @@
 ﻿          1개 파일이 복사되었습니다.
+  BaseScene.cpp
+A:\KingYoungminEdition\GameEditor-master\include\EditorECS\CameraSystem.h(23,23): warning C4101: 'rotation' :참조되지 않은 지역 변수입니다.
   BattleScene.cpp
 A:\KingYoungminEdition\GameEditor-master\include\EditorECS\CameraSystem.h(23,23): warning C4101: 'rotation' :참조되지 않은 지역 변수입니다.
 A:\KingYoungminEdition\GameEditor-master\SampleProject2\BattleScene.cpp(23,123): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+  MapScene.cpp
+A:\KingYoungminEdition\GameEditor-master\include\EditorECS\CameraSystem.h(23,23): warning C4101: 'rotation' :참조되지 않은 지역 변수입니다.
+A:\KingYoungminEdition\GameEditor-master\SampleProject2\MapScene.cpp(18,123): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
   Sample.cpp
 A:\KingYoungminEdition\GameEditor-master\include\EditorECS\CameraSystem.h(23,23): warning C4101: 'rotation' :참조되지 않은 지역 변수입니다.
+  TitleScene.cpp
+A:\KingYoungminEdition\GameEditor-master\include\EditorECS\CameraSystem.h(23,23): warning C4101: 'rotation' :참조되지 않은 지역 변수입니다.
+A:\KingYoungminEdition\GameEditor-master\SampleProject2\TitleScene.cpp(18,123): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+  UI_Loader.cpp
+A:\KingYoungminEdition\GameEditor-master\SampleProject2\UI_Loader.cpp(81,9): warning C4101: 'cutNum' :참조되지 않은 지역 변수입니다.
+  WidgetComponent.cpp
+  WidgetObject.cpp
+A:\KingYoungminEdition\GameEditor-master\SampleProject2\WidgetObject.cpp(157,41): warning C4927: 변환이 잘못되었습니다. 사용자 정의 변환이 암시적으로 두 번 이상 적용되었습니다.
+A:\KingYoungminEdition\GameEditor-master\SampleProject2\WidgetObject.cpp(157,41): message : 'DirectX::SimpleMath::Vector2::Vector2(DirectX::FXMVECTOR) noexcept' 생성자를 호출하는 동안
+A:\KingYoungminEdition\GameEditor-master\include\DXTK\SimpleMath.h(119): message : 'DirectX::SimpleMath::Vector2::Vector2' 선언을 참조하십시오.
+A:\KingYoungminEdition\GameEditor-master\SampleProject2\WidgetObject.cpp(158,41): warning C4927: 변환이 잘못되었습니다. 사용자 정의 변환이 암시적으로 두 번 이상 적용되었습니다.
+A:\KingYoungminEdition\GameEditor-master\SampleProject2\WidgetObject.cpp(158,41): message : 'DirectX::SimpleMath::Vector2::Vector2(DirectX::FXMVECTOR) noexcept' 생성자를 호출하는 동안
+A:\KingYoungminEdition\GameEditor-master\include\DXTK\SimpleMath.h(119): message : 'DirectX::SimpleMath::Vector2::Vector2' 선언을 참조하십시오.
+  WidgetRenderSystem.cpp
   코드를 생성하고 있습니다...
   SampleProject2.vcxproj -> A:\KingYoungminEdition\Output\Debug\SampleProject2\SampleProject2.exe
