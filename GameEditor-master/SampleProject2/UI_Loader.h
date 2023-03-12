@@ -12,6 +12,7 @@ public:
 	std::wstring to_mw(const std::string& _src);
 	std::wstring FileReadToString(std::wstring readFileName);
 	std::vector<std::wstring> SplitString(std::wstring inputStr, std::wstring delimiter);
+	std::wstring GetSplitName(std::wstring fullpath);
 
 public:
 	std::wstring m_szFileContent = L"";

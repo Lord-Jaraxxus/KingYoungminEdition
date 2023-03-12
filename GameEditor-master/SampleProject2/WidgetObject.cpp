@@ -114,6 +114,7 @@ bool WidgetObject::Frame()
 	case(BUTTON):
 	{
 		SetButtonState();
+		Drag();
 	} break;
 
 	case(SPRITE):
@@ -128,6 +129,8 @@ bool WidgetObject::Frame()
 bool WidgetObject::SetPosition(Vector2 originPos)
 {
 	m_OriginPos = originPos;
+	m_OriginalOriginPos = originPos;
+
 	return true;
 }
 
@@ -214,9 +217,22 @@ bool WidgetObject::SetButtonState()
 			if (LButtonState == KeyState::Down) { m_bClicked = true; }	// 클릭처리는 한번만 되게끔, 이거 먹히나근데
 			UpdateCut(CLICK);
 		}
-		else { UpdateCut(HOVER); }
+		else { UpdateCut(HOVER);}
 	}
 	else { UpdateCut(NORMAL); }
+
+	if (m_bClicked && Input::GetInstance()->getKey(VK_LBUTTON) == KeyState::Up) { m_bClicked = false; }
+
+	return true;
+}
+
+bool WidgetObject::Drag()
+{
+	if (m_bDraggable && m_bClicked) 
+	{
+		m_OriginPos += PtoN({(float)Input::GetInstance()->m_ptOffset.x, -((float)Input::GetInstance()->m_ptOffset.y)});
+	}
+	else if (m_bDraggable) { m_OriginPos = m_OriginalOriginPos; }
 
 	return true;
 }

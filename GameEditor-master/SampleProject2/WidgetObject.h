@@ -50,6 +50,7 @@ public:
 	Vector2 PtoN(Vector2 pxWH);
 
 	bool SetButtonState();
+	bool Drag();
 
 public:
 	std::vector<Vertex> Vertices;
@@ -84,5 +85,9 @@ public:
 	bool			m_bDisable = false; // 버튼이랑 스프라이트 공용
 	bool			m_bClicked = false; // 이벤트 처리용, 음..
 	Vector2			m_CollisionBox[2];  // NDC 기준, 각각 Top Left, Bottom Right
+
+	bool			m_bDraggable = false; // 카드는 드래그 가능하도록
+	Vector2			m_OriginalOriginPos;  // 원래 자리로 다시 돌아오도록
+
 };
 

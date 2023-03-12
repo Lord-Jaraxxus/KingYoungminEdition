@@ -1,5 +1,5 @@
 #include "UI_Loader.h"
-
+#include <tchar.h>
 
 std::wstring UI_Loader::to_mw(const std::string& _src)
 {
@@ -48,6 +48,21 @@ std::vector<std::wstring> UI_Loader::SplitString(std::wstring inputStr, std::wst
 	}
 
 	return substrings;
+}
+
+std::wstring UI_Loader::GetSplitName(std::wstring fullpath)
+{
+	TCHAR dirve[MAX_PATH] = { 0, };
+	TCHAR dir[MAX_PATH] = { 0, };
+	TCHAR filename[MAX_PATH] = { 0, };
+	TCHAR ext[MAX_PATH] = { 0, };
+	_wsplitpath_s(fullpath.c_str(), dirve, dir, filename, ext);
+
+	std::wstring szName(filename);
+	std::wstring szExt(ext);
+	szName = szName + szExt;
+
+	return szName;
 }
 
 void UI_Loader::FileLoad(WidgetComponent* wc, std::wstring fileName)
@@ -109,8 +124,12 @@ void UI_Loader::FileLoad(WidgetComponent* wc, std::wstring fileName)
 				newCutInfo.uv.z = std::stof(cutUVContent[2]);
 				newCutInfo.uv.w = std::stof(cutUVContent[3]);
 
+				// 여기서 절대경로를 상대경로로 바꿔치기하는 야매술법
 				std::vector<std::wstring> cutTNContent = SplitString(ciContent[3], L" ");
-				newCutInfo.tn = cutTNContent[0];
+				newCutInfo.tn = L"../resource/UI/";
+				if (Type == IMAGE) { newCutInfo.tn += L"Image/"; }
+				else if (Type == BUTTON) { newCutInfo.tn += L"Button/"; }
+				newCutInfo.tn += GetSplitName(cutTNContent[0]);
 
 				cutInfoList.push_back(newCutInfo);
 			}

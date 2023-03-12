@@ -8,7 +8,7 @@ bool MapScene::Init()
 	Actor* MapUI = new Actor;
 	MapUI->Name = L"Map";
 	auto mc = MapUI->AddComponent<WidgetComponent>();
-	Loader.FileLoad(mc, L"Map.txt");
+	Loader.FileLoad(mc, L"../resource/UI/Save/Map.txt");
 	BackButton = mc->FindObj(L"Back");
 	Mon1 = mc->FindObj(L"Mon1");
 
@@ -30,12 +30,7 @@ bool MapScene::Init()
 
 bool MapScene::Frame()
 {
-	if (BackButton->m_bClicked) 
-	{
-		BackButton->m_bClicked = false;
-		SceneState = 1; 
-	}
-	else if (Mon1->m_bClicked) 
+	if (Mon1->m_bClicked) 
 	{
 		Mon1->m_bClicked = false;
 		SceneState = 3;

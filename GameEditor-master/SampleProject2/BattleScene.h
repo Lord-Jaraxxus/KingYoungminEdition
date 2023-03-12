@@ -9,5 +9,8 @@ public:
 	virtual bool Release() override;
 
 public:
+	WidgetObject* Card1;
+	WidgetObject* Card2;
+	WidgetObject* Card3;
 };
 

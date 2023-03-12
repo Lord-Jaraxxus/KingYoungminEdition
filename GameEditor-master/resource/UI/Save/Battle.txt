@@ -1,0 +1,63 @@
+Type	0
+ID	1
+Name	BG
+OrginPos	-0.006250 -0.793339
+Depth	0.000000
+Alpha	1.000000
+CutNum	1
+CutInfo	0 | 2048.000000 2048.000000 | 0.000000 0.000000 1.000000 1.000000 | A:\KGCA_2--\data\img\battle\background.jpg | ../../data/shader/DefaultObject_Orgin.txt
+=
+Type	0
+ID	3
+Name	Player
+OrginPos	-0.651254 -0.144444
+Depth	0.000000
+Alpha	1.000000
+CutNum	1
+CutInfo	0 | 300.000000 325.000000 | 0.000000 0.000000 1.000000 1.000000 | A:\KGCA_2--\data\img\battle\Player_Shield.png | ../../data/shader/DefaultObject_Orgin.txt
+=
+Type	0
+ID	4
+Name	Enemy
+OrginPos	0.710003 -0.146667
+Depth	0.000000
+Alpha	1.000000
+CutNum	1
+CutInfo	0 | 221.000000 292.000000 | 0.000000 0.000000 1.000000 1.000000 | A:\KGCA_2--\data\img\enemy\GremlinLeader.png | ../../data/shader/DefaultObject_Orgin.txt
+=
+Type	1
+ID	5
+Name	Card1
+OrginPos	-0.450000 -0.600000
+Depth	0.000000
+Alpha	1.000000
+CutNum	4
+CutInfo	0 | 250.000000 318.000000 | 0.000000 0.000000 1.000000 1.000000 | A:\KGCA_2--\data\img\card\0_Strike.png | ../../data/shader/DefaultObject_Orgin.txt
+CutInfo	1 | 260.000000 330.000000 | 0.000000 0.000000 1.000000 1.000000 | A:\KGCA_2--\data\img\card\0_Strike.png | ../../data/shader/DefaultObject_Orgin.txt
+CutInfo	2 | 260.000000 330.000000 | 0.000000 0.000000 1.000000 1.000000 | A:\KGCA_2--\data\img\card\0_Strike.png | ../../data/shader/DefaultObject_Orgin.txt
+CutInfo	3 | 250.000000 318.000000 | 0.000000 0.000000 1.000000 1.000000 | A:\KGCA_2--\data\img\card\0_Strike.png | ../../data/shader/DefaultObject_Orgin.txt
+=
+Type	1
+ID	7
+Name	Card2
+OrginPos	-0.035000 -0.600000
+Depth	0.000000
+Alpha	1.000000
+CutNum	4
+CutInfo	0 | 250.000000 318.000000 | 0.000000 0.000000 1.000000 1.000000 | A:\KGCA_2--\data\img\card\1_Defend.png | ../../data/shader/DefaultObject_Orgin.txt
+CutInfo	1 | 260.000000 330.000000 | 0.000000 0.000000 1.000000 1.000000 | A:\KGCA_2--\data\img\card\1_Defend.png | ../../data/shader/DefaultObject_Orgin.txt
+CutInfo	2 | 260.000000 330.000000 | 0.000000 0.000000 1.000000 1.000000 | A:\KGCA_2--\data\img\card\1_Defend.png | ../../data/shader/DefaultObject_Orgin.txt
+CutInfo	3 | 250.000000 318.000000 | 0.000000 0.000000 1.000000 1.000000 | A:\KGCA_2--\data\img\card\1_Defend.png | ../../data/shader/DefaultObject_Orgin.txt
+=
+Type	1
+ID	8
+Name	Card3
+OrginPos	0.385000 -0.600000
+Depth	0.000000
+Alpha	1.000000
+CutNum	4
+CutInfo	0 | 250.000000 318.000000 | 0.000000 0.000000 1.000000 1.000000 | A:\KGCA_2--\data\img\card\2_PommelStrike.png | ../../data/shader/DefaultObject_Orgin.txt
+CutInfo	1 | 260.000000 330.000000 | 0.000000 0.000000 1.000000 1.000000 | A:\KGCA_2--\data\img\card\2_PommelStrike.png | ../../data/shader/DefaultObject_Orgin.txt
+CutInfo	2 | 260.000000 330.000000 | 0.000000 0.000000 1.000000 1.000000 | A:\KGCA_2--\data\img\card\2_PommelStrike.png | ../../data/shader/DefaultObject_Orgin.txt
+CutInfo	3 | 250.000000 318.000000 | 0.000000 0.000000 1.000000 1.000000 | A:\KGCA_2--\data\img\card\2_PommelStrike.png | ../../data/shader/DefaultObject_Orgin.txt
+=

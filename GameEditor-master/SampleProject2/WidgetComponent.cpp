@@ -33,7 +33,8 @@ bool WidgetComponent::Render()
 
 WidgetObject* WidgetComponent::FindObj(std::wstring ObjName)
 {
-	return ObjMap.find(ObjName)->second;
+	if (ObjMap.find(ObjName) == ObjMap.end()) { return nullptr; }
+	else return ObjMap.find(ObjName)->second;
 }
 
 void WidgetComponent::AddObj(std::wstring ObjName, WidgetObject* wo)

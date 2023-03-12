@@ -8,7 +8,14 @@ bool BattleScene::Init()
 	Actor* Battle = new Actor;
 	Battle->Name = L"Battle";
 	auto bc = Battle->AddComponent<WidgetComponent>();
-	Loader.FileLoad(bc, L"Battle.txt");
+	Loader.FileLoad(bc, L"../resource/UI/Save/Battle.txt");
+	
+	Card1 = bc->FindObj(L"Card1");
+	Card1->m_bDraggable = true;
+	Card2 = bc->FindObj(L"Card2");
+	Card2->m_bDraggable = true;
+	Card3 = bc->FindObj(L"Card3");
+	Card3->m_bDraggable = true;
 
 	// 액터에 카메라 추가.
 	DebugCamera = Battle->AddComponent<Camera>();

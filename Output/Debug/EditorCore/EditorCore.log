@@ -1,48 +1,49 @@
-﻿          1개 파일이 복사되었습니다.
+﻿  지정된 경로를 찾을 수 없습니다.
           1개 파일이 복사되었습니다.
-  compilation object save succeeded; see D:\Download\GameEditor-master\Output\Debug\EditorCore\CS_LandscapeSplatting.cso
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\GS_Landscape.hlsl(34,3): warning X4000: use of potentially uninitialized variable (element)
+          1개 파일이 복사되었습니다.
+  compilation object save succeeded; see A:\KingYoungminEdition\Output\Debug\EditorCore\CS_LandscapeSplatting.cso
+A:\KingYoungminEdition\GameEditor-master\EditorCore\GS_Landscape.hlsl(34,3): warning X4000: use of potentially uninitialized variable (element)
 FXC : warning X4715: emitting a system-interpreted value which may not be written in every execution path of the shader
 FXC : warning X4715: emitting a system-interpreted value which may not be written in every execution path of the shader
 FXC : warning X4715: emitting a system-interpreted value which may not be written in every execution path of the shader
 FXC : warning X4715: emitting a system-interpreted value which may not be written in every execution path of the shader
   
-  compilation object save succeeded; see D:\Download\GameEditor-master\Output\Debug\EditorCore\GS_Landscape.cso
-  compilation object save succeeded; see D:\Download\GameEditor-master\Output\Debug\EditorCore\PS_Default.cso
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\PS_Landscape.hlsl(153,30-51): warning X3206: 'dot': implicit truncation of vector type
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\PS_Landscape.hlsl(171,16-47): warning X3206: 'dot': implicit truncation of vector type
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\PS_Landscape.hlsl(173,30-50): warning X3206: 'dot': implicit truncation of vector type
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\PS_Landscape.hlsl(209,7-55): warning X3206: 'ComputePointDiffuseLight': implicit truncation of vector type
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\PS_Landscape.hlsl(210,7-56): warning X3206: 'ComputePointSpecularLight': implicit truncation of vector type
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\PS_Landscape.hlsl(211,7-54): warning X3206: 'ComputeSpotDiffuseLight': implicit truncation of vector type
-  compilation object save succeeded; see D:\Download\GameEditor-master\Output\Debug\EditorCore\PS_Landscape.cso
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\PS_Landscape.hlsl(212,7-55): warning X3206: 'ComputeSpotSpecularLight': implicit truncation of vector type
+  compilation object save succeeded; see A:\KingYoungminEdition\Output\Debug\EditorCore\GS_Landscape.cso
+  compilation object save succeeded; see A:\KingYoungminEdition\Output\Debug\EditorCore\PS_Default.cso
+A:\KingYoungminEdition\GameEditor-master\EditorCore\PS_Landscape.hlsl(153,30-51): warning X3206: 'dot': implicit truncation of vector type
+A:\KingYoungminEdition\GameEditor-master\EditorCore\PS_Landscape.hlsl(171,16-47): warning X3206: 'dot': implicit truncation of vector type
+A:\KingYoungminEdition\GameEditor-master\EditorCore\PS_Landscape.hlsl(173,30-50): warning X3206: 'dot': implicit truncation of vector type
+A:\KingYoungminEdition\GameEditor-master\EditorCore\PS_Landscape.hlsl(209,7-55): warning X3206: 'ComputePointDiffuseLight': implicit truncation of vector type
+A:\KingYoungminEdition\GameEditor-master\EditorCore\PS_Landscape.hlsl(210,7-56): warning X3206: 'ComputePointSpecularLight': implicit truncation of vector type
+A:\KingYoungminEdition\GameEditor-master\EditorCore\PS_Landscape.hlsl(211,7-54): warning X3206: 'ComputeSpotDiffuseLight': implicit truncation of vector type
+A:\KingYoungminEdition\GameEditor-master\EditorCore\PS_Landscape.hlsl(212,7-55): warning X3206: 'ComputeSpotSpecularLight': implicit truncation of vector type
   
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\PS_Light.hlsl(147,30-51): warning X3206: 'dot': implicit truncation of vector type
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\PS_Light.hlsl(165,16-47): warning X3206: 'dot': implicit truncation of vector type
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\PS_Light.hlsl(167,30-50): warning X3206: 'dot': implicit truncation of vector type
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\PS_Light.hlsl(193,7-55): warning X3206: 'ComputePointDiffuseLight': implicit truncation of vector type
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\PS_Light.hlsl(194,7-56): warning X3206: 'ComputePointSpecularLight': implicit truncation of vector type
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\PS_Light.hlsl(195,7-54): warning X3206: 'ComputeSpotDiffuseLight': implicit truncation of vector type
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\PS_Light.hlsl(196,7-55): warning X3206: 'ComputeSpotSpecularLight': implicit truncation of vector type
+  compilation object save succeeded; see A:\KingYoungminEdition\Output\Debug\EditorCore\PS_Landscape.cso
+A:\KingYoungminEdition\GameEditor-master\EditorCore\PS_Light.hlsl(147,30-51): warning X3206: 'dot': implicit truncation of vector type
+A:\KingYoungminEdition\GameEditor-master\EditorCore\PS_Light.hlsl(165,16-47): warning X3206: 'dot': implicit truncation of vector type
+A:\KingYoungminEdition\GameEditor-master\EditorCore\PS_Light.hlsl(167,30-50): warning X3206: 'dot': implicit truncation of vector type
+A:\KingYoungminEdition\GameEditor-master\EditorCore\PS_Light.hlsl(193,7-55): warning X3206: 'ComputePointDiffuseLight': implicit truncation of vector type
+A:\KingYoungminEdition\GameEditor-master\EditorCore\PS_Light.hlsl(194,7-56): warning X3206: 'ComputePointSpecularLight': implicit truncation of vector type
+A:\KingYoungminEdition\GameEditor-master\EditorCore\PS_Light.hlsl(195,7-54): warning X3206: 'ComputeSpotDiffuseLight': implicit truncation of vector type
+A:\KingYoungminEdition\GameEditor-master\EditorCore\PS_Light.hlsl(196,7-55): warning X3206: 'ComputeSpotSpecularLight': implicit truncation of vector type
   
-  compilation object save succeeded; see D:\Download\GameEditor-master\Output\Debug\EditorCore\PS_Light.cso
-  compilation object save succeeded; see D:\Download\GameEditor-master\Output\Debug\EditorCore\PS_NonTexturedUI.cso
-  compilation object save succeeded; see D:\Download\GameEditor-master\Output\Debug\EditorCore\PS_TexturedUI.cso
-  compilation object save succeeded; see D:\Download\GameEditor-master\Output\Debug\EditorCore\VS_NormalMapStaticMesh.cso
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\VS_SkeletalMesh.hlsl(83,23-58): warning X3206: 'mul': implicit truncation of vector type
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\VS_SkeletalMesh.hlsl(92,2-28): warning X3206: implicit truncation of vector type
+  compilation object save succeeded; see A:\KingYoungminEdition\Output\Debug\EditorCore\PS_Light.cso
+  compilation object save succeeded; see A:\KingYoungminEdition\Output\Debug\EditorCore\PS_NonTexturedUI.cso
+  compilation object save succeeded; see A:\KingYoungminEdition\Output\Debug\EditorCore\PS_TexturedUI.cso
+  compilation object save succeeded; see A:\KingYoungminEdition\Output\Debug\EditorCore\VS_NormalMapStaticMesh.cso
+A:\KingYoungminEdition\GameEditor-master\EditorCore\VS_SkeletalMesh.hlsl(83,23-58): warning X3206: 'mul': implicit truncation of vector type
+A:\KingYoungminEdition\GameEditor-master\EditorCore\VS_SkeletalMesh.hlsl(92,2-28): warning X3206: implicit truncation of vector type
   
-  compilation object save succeeded; see D:\Download\GameEditor-master\Output\Debug\EditorCore\VS_SkeletalMesh.cso
-  compilation object save succeeded; see D:\Download\GameEditor-master\Output\Debug\EditorCore\VS_StaticMesh.cso
-  compilation object save succeeded; see D:\Download\GameEditor-master\Output\Debug\EditorCore\VS_UserInterface.cso
+  compilation object save succeeded; see A:\KingYoungminEdition\Output\Debug\EditorCore\VS_SkeletalMesh.cso
+  compilation object save succeeded; see A:\KingYoungminEdition\Output\Debug\EditorCore\VS_StaticMesh.cso
+  compilation object save succeeded; see A:\KingYoungminEdition\Output\Debug\EditorCore\VS_UserInterface.cso
   DXRenderTarget.cpp
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\DXRenderTarget.cpp(47,15): warning C4244: '=': 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\Download\GameEditor-master\GameEditor-master\EditorCore\DXRenderTarget.cpp(48,16): warning C4244: '=': 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+A:\KingYoungminEdition\GameEditor-master\EditorCore\DXRenderTarget.cpp(47,15): warning C4244: '=': 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+A:\KingYoungminEdition\GameEditor-master\EditorCore\DXRenderTarget.cpp(48,16): warning C4244: '=': 'float'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   EditorCore.cpp
   코드를 생성하고 있습니다...
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1545,5): warning MSB8012: TargetPath(D:\Download\GameEditor-master\Output\Debug\EditorCore\EditorCore.lib)이(가) Library의 OutputFile 속성 값(D:\Download\GameEditor-master\GameEditor-master\EditorCore\EditorCore.lib)과 일치하지 않습니다. 이로 인해 프로젝트가 잘못 빌드될 수 있습니다. 이를 수정하려면 $(OutDir), $(TargetName) 및 $(TargetExt) 속성 값이 %(Lib.OutputFile)에 지정된 값과 일치해야 합니다.
-  EditorCore.vcxproj -> D:\Download\GameEditor-master\Output\Debug\EditorCore\EditorCore.lib
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1545,5): warning MSB8012: TargetPath(A:\KingYoungminEdition\Output\Debug\EditorCore\EditorCore.lib)이(가) Library의 OutputFile 속성 값(A:\KingYoungminEdition\GameEditor-master\EditorCore\EditorCore.lib)과 일치하지 않습니다. 이로 인해 프로젝트가 잘못 빌드될 수 있습니다. 이를 수정하려면 $(OutDir), $(TargetName) 및 $(TargetExt) 속성 값이 %(Lib.OutputFile)에 지정된 값과 일치해야 합니다.
+  EditorCore.vcxproj -> A:\KingYoungminEdition\Output\Debug\EditorCore\EditorCore.lib
   BindPoseAnimationData.h
   CameraMatrix.h
   Define.h

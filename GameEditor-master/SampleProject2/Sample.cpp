@@ -4,7 +4,7 @@
 int APIENTRY wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nCmdShow)
 {
 	WindowsClient sampleWindow;
-	sampleWindow.Create(hInstance, L"Window Name", 1024, 768);
+	sampleWindow.Create(hInstance, L"Window Name", 1600, 900);
 
 	SampleCore core;
 	core.SetWindowHandle(sampleWindow.GetHandle());
