@@ -5,25 +5,34 @@ bool BattleScene::Init()
 	UI_Loader Loader;
 
 	// Actor 생성
-	Actor* Battle = new Actor;
-	Battle->Name = L"Battle";
-	auto bc = Battle->AddComponent<WidgetComponent>();
+	Actor* UI = new Actor;
+	UI->Name = L"Battle";
+	auto bc = UI->AddComponent<WidgetComponent>();
 	Loader.FileLoad(bc, L"../resource/UI/Save/Battle.txt");
 	
-	Card1 = bc->FindObj(L"Card1");
-	Card1->m_bDraggable = true;
-	Card2 = bc->FindObj(L"Card2");
-	Card2->m_bDraggable = true;
-	Card3 = bc->FindObj(L"Card3");
-	Card3->m_bDraggable = true;
+	TurnEndButton = bc->FindObj(L"TurnEnd");
+	RemainCardButton = bc->FindObj(L"Remain");
+	DiscardButton = bc->FindObj(L"Discard");
+
+	// 카드 오브젝트 생성 후 리스트에 넣어줌
+	CardList[0] = bc->FindObj(L"Card1");
+	CardList[0]->m_bDraggable = true;
+	CardList[1] = bc->FindObj(L"Card2");
+	CardList[1]->m_bDraggable = true;
+	CardList[2] = bc->FindObj(L"Card3");
+	CardList[2]->m_bDraggable = true;
+
+	// 카드 텍스처들 로딩
+	CardTextureLoad();
+
+
 
 	// 액터에 카메라 추가.
-	DebugCamera = Battle->AddComponent<Camera>();
-	DebugCamera->CreateViewMatrix(Vector3(0.0f, 0.0f, -100.0f), Vector3(0.0f, 0.0f, 0.0f), Vector3(0.0f, 1.0, 0.0f));
-	DebugCamera->CreateProjectionMatrix(1.0f, 500.0f, PI * 0.25, (DXDevice::g_ViewPort.Width) / (DXDevice::g_ViewPort.Height));
+	//MainCamera = UI->AddComponent<Camera>(); // UI는 일리단은 카메라 필없
+	
 
 	// 메인 월드에 액터 추가.
-	TheWorld.AddEntity(Battle);
+	TheWorld.AddEntity(UI);
 
 	// 카메라 시스템 및 랜더링 시스템 추가.
 	TheWorld.AddSystem(new CameraSystem);
@@ -42,6 +51,14 @@ bool BattleScene::Frame()
 bool BattleScene::Render()
 {
 	BaseScene::Render();
+
+	// 남은 카드 확인 or 버린 카드 확인 버튼 클릭시 씬 전환 (카드 보는 씬으로)
+	//if (RemainCardButton->m_bClicked) //{ SceneState = cardview; RemainCardButton->m_bClicked = false; }
+	//if (DiscardButton->m_bClicked) //{ SceneState = cardview; DiscardButton->m_bClicked = false; }
+
+	//대충 여기서 뭔가 돌아가면 될성싶은디
+	BattleProcess();
+
 	return true;
 }
 
@@ -49,4 +66,151 @@ bool BattleScene::Release()
 {
 	BaseScene::Release();
     return true;
+}
+
+void BattleScene::CardTextureLoad()
+{
+	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/0_Strike.png"))
+	{
+		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/0_Strike.png");
+		CardTextureList.push_back(tc);
+	}
+
+	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/1_Defend.png"))
+	{
+		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/1_Defend.png");
+		CardTextureList.push_back(tc);
+	}
+
+	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/2_PommelStrike.png"))
+	{
+		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/2_PommelStrike.png");
+		CardTextureList.push_back(tc);
+	}
+
+	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/3_ShrugItOff.png"))
+	{
+		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/3_ShrugItOff.png");
+		CardTextureList.push_back(tc);
+	}	
+
+	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/4_Hemokinesis.png"))
+	{
+		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/4_Hemokinesis.png");
+		CardTextureList.push_back(tc);
+	}
+
+	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/5_Bludgeon.png"))
+	{
+		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/5_Bludgeon.png");
+		CardTextureList.push_back(tc);
+	}
+
+
+	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/6_IronWave.png"))
+	{
+		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/6_IronWave.png");
+		CardTextureList.push_back(tc);
+	}
+}
+
+void BattleScene::BattleProcess()
+{
+	if (TurnStart) { TurnStartProcess(); }
+	if (TurnEndButton->m_bClicked) { TurnEndProcess(); }
+	CardCheck();
+}
+
+void BattleScene::TurnStartProcess()
+{
+	int drawNum = 3;
+
+	for (int i = 0; i < drawNum; i++) { CardList[i]->m_bIsDead = false; }
+
+	Dick->Draw(drawNum);
+	UpdateHand(drawNum);
+
+	TurnStart = false;
+}
+
+void BattleScene::TurnEndProcess()
+{
+	Dick->TurnEnd();
+	//EnemyTurnProcess();
+	TurnStart = true;
+
+	TurnEndButton->m_bClicked = false;
+}
+
+void BattleScene::CardCheck()
+{
+	for (int cardNum=0; cardNum<Dick->HandList.size(); cardNum++) 
+	{
+		if (CardList[cardNum]->m_bClicked && CardList[cardNum]->m_OriginPos.y >= 0.5)
+		{
+			CardList[cardNum]->m_bClicked = false;
+			CardList[cardNum]->m_OriginPos = CardList[cardNum]->m_OriginalOriginPos;
+
+			switch (Dick->HandList[cardNum])
+			{
+
+			case Strike:
+			{
+				Dick->Use(cardNum);
+			}break;
+
+			case Defend:
+			{
+				Dick->Use(cardNum);
+			}break;
+
+			case PommelStrike:
+			{
+				Dick->Use(cardNum);
+				Dick->Draw(1);
+			}break;
+
+			case ShrugItOff:
+			{
+				Dick->Use(cardNum);
+				Dick->Draw(1);
+			}break;
+
+			case Hemokinesis:
+			{
+				Dick->Use(cardNum);
+			}break;
+
+			case Bludgeon:
+			{
+				Dick->Use(cardNum);
+			}break;
+
+			case IronWave:
+			{
+				Dick->Use(cardNum);
+			}break;
+
+			}
+
+			UpdateHand(Dick->HandList.size());
+		}
+	}
+}
+
+void BattleScene::UpdateHand(int handSize)
+{
+	for (int card = 0; card < handSize; card++)
+	{
+		for (int ci = 0; ci < 4; ci++)
+		{
+			CardList[card]->m_pCutInfoList[ci]->tc = CardTextureList[Dick->HandList[card]];
+		}
+		CardList[card]->m_bIsDead = false;
+	}
+	
+	for (int card = handSize; card < 3; card++) // for (int card = handSize; card < CardList.size(); card++)
+	{
+		CardList[card]->m_bIsDead = true;
+	}
 }

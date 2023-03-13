@@ -149,7 +149,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BaseScene.h" />
+    <ClInclude Include="Battle.h" />
     <ClInclude Include="BattleScene.h" />
+    <ClInclude Include="CardViewScene.h" />
+    <ClInclude Include="Deck.h" />
+    <ClInclude Include="LoadingScene.h" />
     <ClInclude Include="MapScene.h" />
     <ClInclude Include="Sample.h" />
     <ClInclude Include="TitleScene.h" />
@@ -160,7 +164,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaseScene.cpp" />
+    <ClCompile Include="Battle.cpp" />
     <ClCompile Include="BattleScene.cpp" />
+    <ClCompile Include="CardViewScene.cpp" />
+    <ClCompile Include="Deck.cpp" />
+    <ClCompile Include="LoadingScene.cpp" />
     <ClCompile Include="MapScene.cpp" />
     <ClCompile Include="Sample.cpp" />
     <ClCompile Include="TitleScene.cpp" />

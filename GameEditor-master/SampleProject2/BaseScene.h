@@ -9,6 +9,17 @@
 #include "CameraSystem.h"
 #include "RenderSystem.h"
 #include "WidgetRenderSystem.h"
+#include "Deck.h"
+
+enum SceneState
+{
+	maintain,
+	loading,
+	title,
+	map,
+	battle,
+	cardview,
+};
 
 class BaseScene
 {
@@ -20,9 +31,9 @@ public:
 
 public:
 	ECS::World TheWorld;
-	Camera* DebugCamera;
+	Camera* MainCamera;
 
 public:
-	int SceneState = 0; // 0이면 유지, 1이면 타이틀로, 2면 맵으로, 3이면 전투로.. 뭐 대충 그런식?
+	SceneState SceneState = maintain; // 0이면 유지, 1이면 타이틀로, 2면 맵으로, 3이면 전투로.. 뭐 대충 그런식?
 };
 

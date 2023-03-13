@@ -13,9 +13,9 @@ bool MapScene::Init()
 	Mon1 = mc->FindObj(L"Mon1");
 
 	// 액터에 카메라 추가.
-	DebugCamera = MapUI->AddComponent<Camera>();
-	DebugCamera->CreateViewMatrix(Vector3(0.0f, 0.0f, -100.0f), Vector3(0.0f, 0.0f, 0.0f), Vector3(0.0f, 1.0, 0.0f));
-	DebugCamera->CreateProjectionMatrix(1.0f, 500.0f, PI * 0.25, (DXDevice::g_ViewPort.Width) / (DXDevice::g_ViewPort.Height));
+	MainCamera = MapUI->AddComponent<Camera>();
+	MainCamera->CreateViewMatrix(Vector3(0.0f, 0.0f, -100.0f), Vector3(0.0f, 0.0f, 0.0f), Vector3(0.0f, 1.0, 0.0f));
+	MainCamera->CreateProjectionMatrix(1.0f, 500.0f, PI * 0.25, (DXDevice::g_ViewPort.Width) / (DXDevice::g_ViewPort.Height));
 
 	// 메인 월드에 액터 추가.
 	TheWorld.AddEntity(MapUI);
@@ -33,7 +33,7 @@ bool MapScene::Frame()
 	if (Mon1->m_bClicked) 
 	{
 		Mon1->m_bClicked = false;
-		SceneState = 3;
+		SceneState = battle;
 	}
 
 	BaseScene::Frame();

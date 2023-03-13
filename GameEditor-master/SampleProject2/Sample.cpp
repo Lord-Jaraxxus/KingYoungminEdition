@@ -39,6 +39,14 @@ SampleCore::~SampleCore()
 bool SampleCore::Initialize()
 {
 	EditorCore::Initialize();
+	
+	Dick = new Deck;
+
+	// 초기 로딩중에 로딩화면 바로 띄우기.. 인데 뭔가 원하는 그림이 안나오네..
+	Loading = new LoadingScene;
+	Loading->Init();
+	Loading->Frame();
+	Loading->Render();
 
 	Title = new TitleScene;
 	Title->Init();
@@ -46,8 +54,11 @@ bool SampleCore::Initialize()
 	Map->Init();	
 	Battle = new BattleScene;
 	Battle->Init();
+	Battle->Dick = Dick;
 
 	CurrentScene = Title;
+	//CurrentScene = Battle;
+	
 
 	return true;
 }
@@ -56,25 +67,38 @@ bool SampleCore::Frame()
 {
 	EditorCore::Frame();
 
-	if (CurrentScene->SceneState != 0) 
+	if (CurrentScene->SceneState != maintain) 
 	{
 		switch (CurrentScene->SceneState)
 		{
-		case 1 : 
+		case loading : 
 		{
-			CurrentScene->SceneState = 0;
+			CurrentScene->SceneState = maintain;
+			CurrentScene = Loading;
+		}break;
+
+		case title:
+		{
+			CurrentScene->SceneState = maintain;
 			CurrentScene = Title;
 		}break;
 
-		case 2:
-		{
-			CurrentScene->SceneState = 0;
+		case map:
+		{	
+			CurrentScene->SceneState = maintain;
 			CurrentScene = Map;
 		}break;
 
-		case 3:
-		{	CurrentScene->SceneState = 0;
+		case battle:
+		{	
+			CurrentScene->SceneState = maintain;
 			CurrentScene = Battle;
+		}break;
+
+		case cardview:
+		{
+			CurrentScene->SceneState = maintain;
+			CurrentScene = CardView;
 		}break;
 
 		}

@@ -13,9 +13,9 @@ bool TitleScene::Init()
 
 
 	// 액터에 카메라 추가.
-	DebugCamera = TitleUI->AddComponent<Camera>();
-	DebugCamera->CreateViewMatrix(Vector3(0.0f, 0.0f, -100.0f), Vector3(0.0f, 0.0f, 0.0f), Vector3(0.0f, 1.0, 0.0f));
-	DebugCamera->CreateProjectionMatrix(1.0f, 500.0f, PI * 0.25, (DXDevice::g_ViewPort.Width) / (DXDevice::g_ViewPort.Height));
+	MainCamera = TitleUI->AddComponent<Camera>();
+	MainCamera->CreateViewMatrix(Vector3(0.0f, 0.0f, -100.0f), Vector3(0.0f, 0.0f, 0.0f), Vector3(0.0f, 1.0, 0.0f));
+	MainCamera->CreateProjectionMatrix(1.0f, 500.0f, PI * 0.25, (DXDevice::g_ViewPort.Width) / (DXDevice::g_ViewPort.Height));
 
 	// 메인 월드에 액터 추가.
 	TheWorld.AddEntity(TitleUI);
@@ -33,7 +33,7 @@ bool TitleScene::Frame()
 	if (StartButton->m_bClicked) 
 	{ 
 		StartButton->m_bClicked = false;
-		SceneState = 2; 
+		SceneState = map; 
 	}
 	BaseScene::Frame();
 	return true;
