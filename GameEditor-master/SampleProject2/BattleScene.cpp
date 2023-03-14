@@ -24,14 +24,19 @@ bool BattleScene::Init()
 	CardList[2] = bc->FindObj(L"Card3");
 	CardList[2]->m_bDraggable = true;
 
-	// 카드 텍스처들 로딩
-	CardTextureLoad();
+	// 플레이어 거시기 HP표시용 
+	PlayerCurrenHP1 = bc->FindObj(L"PlayerCurrentHP_1");
+	PlayerCurrenHP2 = bc->FindObj(L"PlayerCurrentHP_2");
+	PlayerMaxHP1 = bc->FindObj(L"PlayerMaxHP_1");
+	PlayerMaxHP2 = bc->FindObj(L"PlayerMaxHP_2");
 
-
+	PlayerCurrenHP1->m_pCutInfoList[0]->tc = NumberTextureList[6];
+	PlayerCurrenHP2->m_pCutInfoList[0]->tc = NumberTextureList[9];
+	PlayerMaxHP1->m_pCutInfoList[0]->tc = NumberTextureList[7];
+	PlayerMaxHP2->m_pCutInfoList[0]->tc = NumberTextureList[4];
 
 	// 액터에 카메라 추가.
 	//MainCamera = UI->AddComponent<Camera>(); // UI는 일리단은 카메라 필없
-	
 
 	// 메인 월드에 액터 추가.
 	TheWorld.AddEntity(UI);

@@ -1,5 +1,7 @@
 #pragma once
 #include "BaseScene.h"
+
+
 class BattleScene : public BaseScene
 {
 public:
@@ -33,10 +35,16 @@ public:
 	WidgetObject* RemainCardButton;
 	WidgetObject* DiscardButton;
 
+	WidgetObject* PlayerCurrenHP1;
+	WidgetObject* PlayerCurrenHP2;
+	WidgetObject* PlayerMaxHP1;
+	WidgetObject* PlayerMaxHP2;
+
 public:
 	Deck* Dick;
 	std::vector<DXTexture*> CardTextureList;
 	WidgetObject* CardList[3] = { 0, };
+	std::vector<DXTexture*> NumberTextureList;
 
 public:
 	bool TurnState = true; // true면 내턴, false면 적턴

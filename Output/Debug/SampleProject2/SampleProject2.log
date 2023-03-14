@@ -1,5 +1,14 @@
 ﻿          1개 파일이 복사되었습니다.
-  TitleScene.cpp
+  Sample.cpp
 D:\KingYoungminEdition\GameEditor-master\include\EditorECS\CameraSystem.h(23,23): warning C4101: 'rotation' :참조되지 않은 지역 변수입니다.
-D:\KingYoungminEdition\GameEditor-master\SampleProject2\TitleScene.cpp(18,122): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+D:\KingYoungminEdition\GameEditor-master\SampleProject2\Sample.cpp(136,80): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
+D:\KingYoungminEdition\GameEditor-master\SampleProject2\Sample.cpp(141,80): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
+D:\KingYoungminEdition\GameEditor-master\SampleProject2\Sample.cpp(146,80): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
+D:\KingYoungminEdition\GameEditor-master\SampleProject2\Sample.cpp(151,80): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
+D:\KingYoungminEdition\GameEditor-master\SampleProject2\Sample.cpp(156,80): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
+D:\KingYoungminEdition\GameEditor-master\SampleProject2\Sample.cpp(161,80): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
+D:\KingYoungminEdition\GameEditor-master\SampleProject2\Sample.cpp(166,80): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
+D:\KingYoungminEdition\GameEditor-master\SampleProject2\Sample.cpp(171,80): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
+D:\KingYoungminEdition\GameEditor-master\SampleProject2\Sample.cpp(176,80): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
+D:\KingYoungminEdition\GameEditor-master\SampleProject2\Sample.cpp(181,80): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
   SampleProject2.vcxproj -> D:\KingYoungminEdition\Output\Debug\SampleProject2\SampleProject2.exe
