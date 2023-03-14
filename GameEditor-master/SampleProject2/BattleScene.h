@@ -9,9 +9,6 @@ public:
 	virtual bool Release() override;
 
 public:
-	void CardTextureLoad();
-
-public:
 	void BattleProcess();
 	void TurnStartProcess();
 	void TurnEndProcess();
@@ -37,9 +34,9 @@ public:
 	WidgetObject* DiscardButton;
 
 public:
-	WidgetObject* CardList[3] = { 0, };
-	std::vector<DXTexture*> CardTextureList;
 	Deck* Dick;
+	std::vector<DXTexture*> CardTextureList;
+	WidgetObject* CardList[3] = { 0, };
 
 public:
 	bool TurnState = true; // true면 내턴, false면 적턴

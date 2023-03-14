@@ -8,7 +8,7 @@ bool TitleScene::Init()
 	Actor* TitleUI = new Actor;
 	TitleUI->Name = L"Title";
 	auto tc = TitleUI->AddComponent<WidgetComponent>();
-	Loader.FileLoad(tc, L"../resource/UI/Save/newfile.txt");
+	Loader.FileLoad(tc, L"../resource/UI/Save/Title.txt");
 	StartButton = tc->FindObj(L"Button_Start");
 
 
@@ -33,7 +33,7 @@ bool TitleScene::Frame()
 	if (StartButton->m_bClicked) 
 	{ 
 		StartButton->m_bClicked = false;
-		SceneState = map; 
+		SS = map; 
 	}
 	BaseScene::Frame();
 	return true;

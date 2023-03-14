@@ -19,7 +19,12 @@ public:
 	virtual bool Release() override;
 
 public:
+	void CardTextureLoad();
+	void SceneChange();
+
+public:
 	BaseScene* CurrentScene;
+
 	LoadingScene* Loading;
 	TitleScene* Title;
 	MapScene* Map;
@@ -28,4 +33,5 @@ public:
 
 public:
 	Deck* Dick;
+	std::vector<DXTexture*> CardTextureList;
 };

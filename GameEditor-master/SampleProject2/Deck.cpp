@@ -12,6 +12,7 @@ Deck::Deck()
 	DeckList.push_back(IronWave);
 	DeckList.push_back(ShrugItOff);
 
+
 	for (auto obj : DeckList)
 	{
 		RemainingCardList.push_back(obj);

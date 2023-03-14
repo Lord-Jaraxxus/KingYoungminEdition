@@ -2,6 +2,8 @@
 
 bool BattleScene::Init()
 {
+	ID = battle;
+
 	UI_Loader Loader;
 
 	// Actor 생성
@@ -53,8 +55,8 @@ bool BattleScene::Render()
 	BaseScene::Render();
 
 	// 남은 카드 확인 or 버린 카드 확인 버튼 클릭시 씬 전환 (카드 보는 씬으로)
-	//if (RemainCardButton->m_bClicked) //{ SceneState = cardview; RemainCardButton->m_bClicked = false; }
-	//if (DiscardButton->m_bClicked) //{ SceneState = cardview; DiscardButton->m_bClicked = false; }
+	if (RemainCardButton->m_bClicked){ SS = remainView; RemainCardButton->m_bClicked = false; }
+	if (DiscardButton->m_bClicked) { SS = discardView; DiscardButton->m_bClicked = false; }
 
 	//대충 여기서 뭔가 돌아가면 될성싶은디
 	BattleProcess();
@@ -66,52 +68,6 @@ bool BattleScene::Release()
 {
 	BaseScene::Release();
     return true;
-}
-
-void BattleScene::CardTextureLoad()
-{
-	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/0_Strike.png"))
-	{
-		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/0_Strike.png");
-		CardTextureList.push_back(tc);
-	}
-
-	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/1_Defend.png"))
-	{
-		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/1_Defend.png");
-		CardTextureList.push_back(tc);
-	}
-
-	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/2_PommelStrike.png"))
-	{
-		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/2_PommelStrike.png");
-		CardTextureList.push_back(tc);
-	}
-
-	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/3_ShrugItOff.png"))
-	{
-		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/3_ShrugItOff.png");
-		CardTextureList.push_back(tc);
-	}	
-
-	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/4_Hemokinesis.png"))
-	{
-		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/4_Hemokinesis.png");
-		CardTextureList.push_back(tc);
-	}
-
-	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/5_Bludgeon.png"))
-	{
-		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/5_Bludgeon.png");
-		CardTextureList.push_back(tc);
-	}
-
-
-	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/6_IronWave.png"))
-	{
-		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/6_IronWave.png");
-		CardTextureList.push_back(tc);
-	}
 }
 
 void BattleScene::BattleProcess()
@@ -156,43 +112,44 @@ void BattleScene::CardCheck()
 
 			case Strike:
 			{
-				Dick->Use(cardNum);
+				
 			}break;
 
 			case Defend:
 			{
-				Dick->Use(cardNum);
+				
 			}break;
 
 			case PommelStrike:
 			{
-				Dick->Use(cardNum);
+
 				Dick->Draw(1);
 			}break;
 
 			case ShrugItOff:
 			{
-				Dick->Use(cardNum);
+
 				Dick->Draw(1);
 			}break;
 
 			case Hemokinesis:
 			{
-				Dick->Use(cardNum);
+				
 			}break;
 
 			case Bludgeon:
 			{
-				Dick->Use(cardNum);
+				
 			}break;
 
 			case IronWave:
 			{
-				Dick->Use(cardNum);
+				
 			}break;
 
 			}
 
+			Dick->Use(cardNum);
 			UpdateHand(Dick->HandList.size());
 		}
 	}

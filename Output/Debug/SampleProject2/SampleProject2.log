@@ -1,4 +1,5 @@
 ﻿          1개 파일이 복사되었습니다.
-  Sample.cpp
+  TitleScene.cpp
 D:\KingYoungminEdition\GameEditor-master\include\EditorECS\CameraSystem.h(23,23): warning C4101: 'rotation' :참조되지 않은 지역 변수입니다.
+D:\KingYoungminEdition\GameEditor-master\SampleProject2\TitleScene.cpp(18,122): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
   SampleProject2.vcxproj -> D:\KingYoungminEdition\Output\Debug\SampleProject2\SampleProject2.exe

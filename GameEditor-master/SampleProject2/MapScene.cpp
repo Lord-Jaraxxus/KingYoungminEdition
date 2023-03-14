@@ -2,6 +2,8 @@
 
 bool MapScene::Init()
 {
+	ID = map;
+
 	UI_Loader Loader;
 
 	// Actor »ý¼º
@@ -33,7 +35,7 @@ bool MapScene::Frame()
 	if (Mon1->m_bClicked) 
 	{
 		Mon1->m_bClicked = false;
-		SceneState = battle;
+		SS = battle;
 	}
 
 	BaseScene::Frame();

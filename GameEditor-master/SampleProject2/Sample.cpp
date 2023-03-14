@@ -41,6 +41,7 @@ bool SampleCore::Initialize()
 	EditorCore::Initialize();
 	
 	Dick = new Deck;
+	CardTextureLoad();
 
 	// 초기 로딩중에 로딩화면 바로 띄우기.. 인데 뭔가 원하는 그림이 안나오네..
 	Loading = new LoadingScene;
@@ -55,6 +56,11 @@ bool SampleCore::Initialize()
 	Battle = new BattleScene;
 	Battle->Init();
 	Battle->Dick = Dick;
+	Battle->CardTextureList = CardTextureList;
+	CardView = new CardViewScene;
+	CardView->Init();
+	CardView->Dick = Dick;
+	CardView->CardTextureList = CardTextureList;
 
 	CurrentScene = Title;
 	//CurrentScene = Battle;
@@ -66,44 +72,7 @@ bool SampleCore::Initialize()
 bool SampleCore::Frame()
 {
 	EditorCore::Frame();
-
-	if (CurrentScene->SceneState != maintain) 
-	{
-		switch (CurrentScene->SceneState)
-		{
-		case loading : 
-		{
-			CurrentScene->SceneState = maintain;
-			CurrentScene = Loading;
-		}break;
-
-		case title:
-		{
-			CurrentScene->SceneState = maintain;
-			CurrentScene = Title;
-		}break;
-
-		case map:
-		{	
-			CurrentScene->SceneState = maintain;
-			CurrentScene = Map;
-		}break;
-
-		case battle:
-		{	
-			CurrentScene->SceneState = maintain;
-			CurrentScene = Battle;
-		}break;
-
-		case cardview:
-		{
-			CurrentScene->SceneState = maintain;
-			CurrentScene = CardView;
-		}break;
-
-		}
-	}
-
+	SceneChange();
 	CurrentScene->Frame();
 
 	return true;
@@ -120,4 +89,108 @@ bool SampleCore::Render()
 bool SampleCore::Release()
 {
 	return EditorCore::Release();
+}
+
+void SampleCore::CardTextureLoad()
+{
+	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/0_Strike.png"))
+	{
+		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/0_Strike.png");
+		CardTextureList.push_back(tc);
+	}
+
+	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/1_Defend.png"))
+	{
+		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/1_Defend.png");
+		CardTextureList.push_back(tc);
+	}
+
+	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/2_PommelStrike.png"))
+	{
+		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/2_PommelStrike.png");
+		CardTextureList.push_back(tc);
+	}
+
+	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/3_ShrugItOff.png"))
+	{
+		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/3_ShrugItOff.png");
+		CardTextureList.push_back(tc);
+	}
+
+	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/4_Hemokinesis.png"))
+	{
+		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/4_Hemokinesis.png");
+		CardTextureList.push_back(tc);
+	}
+
+	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/5_Bludgeon.png"))
+	{
+		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/5_Bludgeon.png");
+		CardTextureList.push_back(tc);
+	}
+
+
+	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Card/6_IronWave.png"))
+	{
+		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Card/6_IronWave.png");
+		CardTextureList.push_back(tc);
+	}
+}
+
+void SampleCore::SceneChange()
+{
+	if (CurrentScene->SS != maintain)
+	{
+		switch (CurrentScene->SS)
+		{
+		case loading:
+		{
+			CurrentScene->SS = maintain;
+			CurrentScene = Loading;
+		}break;
+
+		case title:
+		{
+			CurrentScene->SS = maintain;
+			CurrentScene = Title;
+		}break;
+
+		case map:
+		{
+			CurrentScene->SS = maintain;
+			CurrentScene = Map;
+		}break;
+
+		case battle:
+		{
+			CurrentScene->SS = maintain;
+			CurrentScene = Battle;
+		}break;
+
+		case deckView:
+		{
+			CardView->BeforeScene = CurrentScene->ID;
+			CurrentScene->SS = maintain;
+			CurrentScene = CardView;
+			CardView->Update(deck);
+		}break;
+
+		case remainView:
+		{
+			CardView->BeforeScene = CurrentScene->ID;
+			CurrentScene->SS = maintain;
+			CurrentScene = CardView;
+			CardView->Update(remain);
+		}break;
+
+		case discardView:
+		{
+			CardView->BeforeScene = CurrentScene->ID;
+			CurrentScene->SS = maintain;
+			CurrentScene = CardView;
+			CardView->Update(discard);
+		}break;
+
+		}
+	}
 }

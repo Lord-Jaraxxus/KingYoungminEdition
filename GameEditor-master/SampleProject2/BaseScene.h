@@ -18,7 +18,9 @@ enum SceneState
 	title,
 	map,
 	battle,
-	cardview,
+	deckView,
+	remainView,
+	discardView,
 };
 
 class BaseScene
@@ -30,10 +32,17 @@ public:
 	virtual bool Release();
 
 public:
+	void CardTextureLoad();
+
+public:
 	ECS::World TheWorld;
 	Camera* MainCamera;
 
 public:
-	SceneState SceneState = maintain; // 0이면 유지, 1이면 타이틀로, 2면 맵으로, 3이면 전투로.. 뭐 대충 그런식?
+	SceneState SS = maintain; // 0이면 유지, 1이면 타이틀로, 2면 맵으로, 3이면 전투로.. 뭐 대충 그런식?
+	SceneState ID = maintain; // 씬마다 자기가 뭔지 붙여놓기위함
+
+public:
+	std::vector<DXTexture*> CardTextureList;
 };
 

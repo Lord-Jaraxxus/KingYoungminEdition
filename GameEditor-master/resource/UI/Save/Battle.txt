@@ -1,5 +1,5 @@
 Type	0
-ID	1
+ID	3
 Name	BG
 OrginPos	-0.006250 -0.793339
 Depth	0.000000
@@ -8,7 +8,7 @@ CutNum	1
 CutInfo	0 | 2048.000000 2048.000000 | 0.000000 0.000000 1.000000 1.000000 | D:\KingYoungminEdition\GameEditor-master\resource\UI\Image\background.jpg | ../../data/shader/DefaultObject_Orgin.txt
 =
 Type	1
-ID	2
+ID	4
 Name	Card1
 OrginPos	-0.450000 -0.600000
 Depth	0.000000
@@ -20,7 +20,7 @@ CutInfo	2 | 260.000000 330.000000 | 0.000000 0.000000 1.000000 1.000000 | D:\Kin
 CutInfo	3 | 250.000000 318.000000 | 0.000000 0.000000 1.000000 1.000000 | D:\KingYoungminEdition\GameEditor-master\resource\UI\Button\0_Strike.png | ../../data/shader/DefaultObject_Orgin.txt
 =
 Type	1
-ID	3
+ID	5
 Name	Card2
 OrginPos	-0.035000 -0.600000
 Depth	0.000000
@@ -32,7 +32,7 @@ CutInfo	2 | 260.000000 330.000000 | 0.000000 0.000000 1.000000 1.000000 | D:\Kin
 CutInfo	3 | 250.000000 318.000000 | 0.000000 0.000000 1.000000 1.000000 | D:\KingYoungminEdition\GameEditor-master\resource\UI\Button\1_Defend.png | ../../data/shader/DefaultObject_Orgin.txt
 =
 Type	1
-ID	4
+ID	6
 Name	Card3
 OrginPos	0.385000 -0.600000
 Depth	0.000000
@@ -56,7 +56,7 @@ CutInfo	2 | 120.000000 120.000000 | 0.000000 0.000000 1.000000 1.000000 | D:\Kin
 CutInfo	3 | 128.000000 128.000000 | 0.000000 0.000000 1.000000 1.000000 | D:\KingYoungminEdition\GameEditor-master\resource\UI\Button\Discard.png | ../../data/shader/DefaultObject_Orgin.txt
 =
 Type	0
-ID	5
+ID	10
 Name	Enemy
 OrginPos	0.710003 -0.146667
 Depth	0.000000
@@ -65,7 +65,7 @@ CutNum	1
 CutInfo	0 | 221.000000 292.000000 | 0.000000 0.000000 1.000000 1.000000 | D:\KingYoungminEdition\GameEditor-master\resource\UI\Image\GremlinLeader.png | ../../data/shader/DefaultObject_Orgin.txt
 =
 Type	0
-ID	6
+ID	11
 Name	Player
 OrginPos	-0.651254 -0.144444
 Depth	0.000000
@@ -74,7 +74,7 @@ CutNum	1
 CutInfo	0 | 300.000000 325.000000 | 0.000000 0.000000 1.000000 1.000000 | D:\KingYoungminEdition\GameEditor-master\resource\UI\Image\Player_Shield.png | ../../data/shader/DefaultObject_Orgin.txt
 =
 Type	1
-ID	8
+ID	12
 Name	Remain
 OrginPos	-0.882502 0.813334
 Depth	0.000000
@@ -86,7 +86,7 @@ CutInfo	2 | 120.000000 120.000000 | 0.000000 0.000000 1.000000 1.000000 | D:\Kin
 CutInfo	3 | 128.000000 128.000000 | 0.000000 0.000000 1.000000 1.000000 | D:\KingYoungminEdition\GameEditor-master\resource\UI\Button\Remain.png | ../../data/shader/DefaultObject_Orgin.txt
 =
 Type	1
-ID	7
+ID	13
 Name	TurnEnd
 OrginPos	0.813749 -0.824445
 Depth	0.000000
