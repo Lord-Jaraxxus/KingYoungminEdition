@@ -20,6 +20,9 @@
     <Filter Include="Battle">
       <UniqueIdentifier>{8396654d-6afd-41af-b986-7d34873e7574}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Battle\Enemy">
+      <UniqueIdentifier>{7c5bdd80-9877-4ffa-a42b-c36d7c8e5d74}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="WidgetComponent.h">
@@ -47,9 +50,6 @@
       <Filter>Scene</Filter>
     </ClInclude>
     <ClInclude Include="Sample.h" />
-    <ClInclude Include="Battle.h">
-      <Filter>Battle</Filter>
-    </ClInclude>
     <ClInclude Include="Deck.h">
       <Filter>Battle</Filter>
     </ClInclude>
@@ -58,6 +58,9 @@
     </ClInclude>
     <ClInclude Include="LoadingScene.h">
       <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseEnemy.h">
+      <Filter>Battle\Enemy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -86,9 +89,6 @@
       <Filter>Scene</Filter>
     </ClCompile>
     <ClCompile Include="Sample.cpp" />
-    <ClCompile Include="Battle.cpp">
-      <Filter>Battle</Filter>
-    </ClCompile>
     <ClCompile Include="Deck.cpp">
       <Filter>Battle</Filter>
     </ClCompile>
@@ -97,6 +97,9 @@
     </ClCompile>
     <ClCompile Include="LoadingScene.cpp">
       <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseEnemy.cpp">
+      <Filter>Battle\Enemy</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -148,8 +148,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BaseEnemy.h" />
     <ClInclude Include="BaseScene.h" />
-    <ClInclude Include="Battle.h" />
     <ClInclude Include="BattleScene.h" />
     <ClInclude Include="CardViewScene.h" />
     <ClInclude Include="Deck.h" />
@@ -163,8 +163,8 @@
     <ClInclude Include="WidgetRenderSystem.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BaseEnemy.cpp" />
     <ClCompile Include="BaseScene.cpp" />
-    <ClCompile Include="Battle.cpp" />
     <ClCompile Include="BattleScene.cpp" />
     <ClCompile Include="CardViewScene.cpp" />
     <ClCompile Include="Deck.cpp" />
