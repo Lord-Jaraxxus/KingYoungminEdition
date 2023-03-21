@@ -1,9 +1,13 @@
 #pragma once
+#include "Player.h"
+
 class BaseEnemy
-{
+{	
+	virtual bool Init();
+	virtual void patern(Player* player, int turn);
+
 public:
 	int hp;
-	
-	virtual void patern(int turn);
+	// Character* chara;
 };
 

@@ -56,7 +56,7 @@ bool SampleCore::Initialize()
 	Battle = new BattleScene;
 	Battle->Dick = Dick;
 	Battle->CardTextureList = CardTextureList;
-	Battle->NumberTextureList = NumberTextureList;
+	Battle->NumberTextureList = NumberTextureList_Red;
 	Battle->Init();
 	CardView = new CardViewScene;
 	CardView->Dick = Dick;
@@ -136,52 +136,52 @@ void SampleCore::TextureLoad()
 	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Number/red/0.png"));
 	{
 		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Number/red/0.png");
-		NumberTextureList.push_back(tc);
+		NumberTextureList_Red.push_back(tc);
 	}
 	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Number/red/1.png"));
 	{
 		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Number/red/1.png");
-		NumberTextureList.push_back(tc);
+		NumberTextureList_Red.push_back(tc);
 	}
 	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Number/red/2.png"));
 	{
 		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Number/red/2.png");
-		NumberTextureList.push_back(tc);
+		NumberTextureList_Red.push_back(tc);
 	}
 	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Number/red/3.png"));
 	{
 		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Number/red/3.png");
-		NumberTextureList.push_back(tc);
+		NumberTextureList_Red.push_back(tc);
 	}
 	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Number/red/4.png"));
 	{
 		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Number/red/4.png");
-		NumberTextureList.push_back(tc);
+		NumberTextureList_Red.push_back(tc);
 	}
 	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Number/red/5.png"));
 	{
 		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Number/red/5.png");
-		NumberTextureList.push_back(tc);
+		NumberTextureList_Red.push_back(tc);
 	}
 	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Number/red/6.png"));
 	{
 		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Number/red/6.png");
-		NumberTextureList.push_back(tc);
+		NumberTextureList_Red.push_back(tc);
 	}
 	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Number/red/7.png"));
 	{
 		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Number/red/7.png");
-		NumberTextureList.push_back(tc);
+		NumberTextureList_Red.push_back(tc);
 	}
 	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Number/red/8.png"));
 	{
 		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Number/red/8.png");
-		NumberTextureList.push_back(tc);
+		NumberTextureList_Red.push_back(tc);
 	}
 	if (DXTextureManager::GetInstance()->Load(L"../resource/UI/Number/red/9.png"));
 	{
 		DXTexture* tc = DXTextureManager::GetInstance()->GetTexture(L"../resource/UI/Number/red/9.png");
-		NumberTextureList.push_back(tc);
+		NumberTextureList_Red.push_back(tc);
 	}
 }
 

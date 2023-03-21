@@ -3,8 +3,14 @@
 bool BattleScene::Init()
 {
 	ID = battle;
-
 	UI_Loader Loader;
+
+	// 사실 플레이어는 타이틀에서 함 초기화하고 가는것도..
+	player = new Player;
+	player->maxHp = 50;
+	player->hp = 50; 
+	enemy = new Enemy_1;
+	enemy->Init();
 
 	// Actor 생성
 	Actor* UI = new Actor;
@@ -30,10 +36,10 @@ bool BattleScene::Init()
 	PlayerMaxHP1 = bc->FindObj(L"PlayerMaxHP_1");
 	PlayerMaxHP2 = bc->FindObj(L"PlayerMaxHP_2");
 
-	PlayerCurrenHP1->m_pCutInfoList[0]->tc = NumberTextureList[6];
-	PlayerCurrenHP2->m_pCutInfoList[0]->tc = NumberTextureList[9];
-	PlayerMaxHP1->m_pCutInfoList[0]->tc = NumberTextureList[7];
-	PlayerMaxHP2->m_pCutInfoList[0]->tc = NumberTextureList[4];
+	PlayerCurrenHP1->m_pCutInfoList[0]->tc = NumberTextureList[player->hp/10];
+	PlayerCurrenHP2->m_pCutInfoList[0]->tc = NumberTextureList[player->hp%10];
+	PlayerMaxHP1->m_pCutInfoList[0]->tc = NumberTextureList[player->maxHp/10];
+	PlayerMaxHP2->m_pCutInfoList[0]->tc = NumberTextureList[player->maxHp%10];
 
 	// 액터에 카메라 추가.
 	//MainCamera = UI->AddComponent<Camera>(); // UI는 일리단은 카메라 필없
@@ -84,6 +90,9 @@ void BattleScene::BattleProcess()
 
 void BattleScene::TurnStartProcess()
 {
+	TurnNum++;
+	player->armor = 0;
+
 	int drawNum = 3;
 
 	for (int i = 0; i < drawNum; i++) { CardList[i]->m_bIsDead = false; }
@@ -96,11 +105,21 @@ void BattleScene::TurnStartProcess()
 
 void BattleScene::TurnEndProcess()
 {
+	TurnNum++;
 	Dick->TurnEnd();
-	//EnemyTurnProcess();
-	TurnStart = true;
+	EnemyTurnProcess();
 
 	TurnEndButton->m_bClicked = false;
+}
+
+void BattleScene::EnemyTurnProcess()
+{
+	enemy->patern(player, TurnNum);
+
+	PlayerCurrenHP1->m_pCutInfoList[0]->tc = NumberTextureList[player->hp / 10];
+	PlayerCurrenHP2->m_pCutInfoList[0]->tc = NumberTextureList[player->hp % 10];
+
+	TurnStart = true;
 }
 
 void BattleScene::CardCheck()
@@ -117,23 +136,23 @@ void BattleScene::CardCheck()
 
 			case Strike:
 			{
-				
+				enemy->hp -= 6;
 			}break;
 
 			case Defend:
 			{
-				
+				player->armor += 5;
 			}break;
 
 			case PommelStrike:
 			{
-
+				enemy->hp -= 9;
 				Dick->Draw(1);
 			}break;
 
 			case ShrugItOff:
 			{
-
+				player->armor += 8;
 				Dick->Draw(1);
 			}break;
 
@@ -149,7 +168,8 @@ void BattleScene::CardCheck()
 
 			case IronWave:
 			{
-				
+				enemy->hp -= 5;
+				player->armor += 5;
 			}break;
 
 			}

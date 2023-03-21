@@ -62,6 +62,10 @@
     <ClInclude Include="BaseEnemy.h">
       <Filter>Battle\Enemy</Filter>
     </ClInclude>
+    <ClInclude Include="Enemy_1.h" />
+    <ClInclude Include="Player.h">
+      <Filter>Battle</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WidgetComponent.cpp">
@@ -100,6 +104,10 @@
     </ClCompile>
     <ClCompile Include="BaseEnemy.cpp">
       <Filter>Battle\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy_1.cpp" />
+    <ClCompile Include="Player.cpp">
+      <Filter>Battle</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

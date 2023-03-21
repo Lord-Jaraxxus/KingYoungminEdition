@@ -1,6 +1,7 @@
 #pragma once
 #include "BaseScene.h"
-
+#include "Player.h"
+#include "Enemy_1.h"
 
 class BattleScene : public BaseScene
 {
@@ -14,8 +15,13 @@ public:
 	void BattleProcess();
 	void TurnStartProcess();
 	void TurnEndProcess();
+	void EnemyTurnProcess();
 	void CardCheck();
 	void UpdateHand(int handSize);
+
+public:
+	Player* player;
+	Enemy_1* enemy;
 
 public:
 	Camera* MoveCamera;

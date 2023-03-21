@@ -34,5 +34,6 @@ public:
 public:
 	Deck* Dick;
 	std::vector<DXTexture*> CardTextureList;
-	std::vector<DXTexture*> NumberTextureList;
+	std::vector<DXTexture*> NumberTextureList_Red;
+	std::vector<DXTexture*> NumberTextureList_Black;
 };
